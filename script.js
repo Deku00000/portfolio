@@ -52,7 +52,7 @@ const closeLb = () => {
   lightbox.classList.remove("is-open");
   lightbox.setAttribute("aria-hidden", "true");
 };
-document.querySelectorAll(".tile, .phone, .logo-tile").forEach((fig) =>
+document.querySelectorAll(".tile, .logo-tile").forEach((fig) =>
   fig.addEventListener("click", () => {
     const img = fig.querySelector("img");
     if (!img || fig.querySelector(".is-empty")) return;

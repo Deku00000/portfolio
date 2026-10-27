@@ -2,9 +2,9 @@
 
 A one-page portfolio site. It's plain HTML, CSS and JavaScript, so there's no build step.
 
-## Adding your images
+## Images
 
-Drop your images into `assets/img/` using these names. Any slot without an image shows a labeled placeholder.
+The images were cut from the Canva design and live in `assets/img/`. To swap one, replace the file but keep the same name. A missing file shows a labeled placeholder.
 
 | File | Where it shows |
 |---|---|
@@ -14,8 +14,9 @@ Drop your images into `assets/img/` using these names. Any slot without an image
 | `logos/logo-1.png` … `logo-4.png` | Logos (transparent PNGs look best) |
 | `logos/flyer-1.jpg`, `flyer-2.jpg` | Flyers |
 | `portfolio/josephine-1.jpg` … `-4.jpg` | Josephine Abraham case |
-| `portfolio/nasir-1.jpg` … `-4.jpg` | Nasir Mohammed case |
-| `instagram/01.jpg` … `03.jpg` | Instagram format (portrait/phone shape) |
+| `portfolio/nasir-1.jpg` … `-6.jpg` | Nasir Mohammed case |
+| `instagram/mockup.jpg` | Instagram phone mockup |
+| `instagram/01.jpg` … `07.jpg` | Instagram post designs |
 
 ## Preview locally
 
