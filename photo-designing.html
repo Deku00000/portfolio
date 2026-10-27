@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Designing — Akinyemi Samson</title>
+  <meta name="description" content="Photo edits, composites and campaign visuals by Akinyemi Samson." />
+  <meta property="og:title" content="Photo Designing — Akinyemi Samson" />
+  <meta property="og:description" content="Photo edits, composites and campaign visuals by Akinyemi Samson." />
+  <meta property="og:image" content="assets/img/portrait.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <span id="top"></span>
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">AS<span>.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="nav__group is-current">
+        <button class="nav__works" aria-expanded="false" aria-haspopup="true">Works <span aria-hidden="true">▾</span></button>
+        <ul class="nav__sub">
+          <li><a href="photo-designing.html" aria-current="page">Photo Designing</a></li>
+          <li><a href="logos-flyers.html">Logos &amp; Flyers</a></li>
+          <li><a href="portfolio-designing.html">Portfolio Designing</a></li>
+          <li><a href="instagram-format.html">Instagram Format</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow reveal"><a href="index.html#works">Works</a> / 01</p>
+        <h1 class="page-head__title reveal">Photo Designing</h1>
+        <p class="page-head__intro reveal">Edits, composites and campaign visuals for artists, dancers, models and athletes.</p>
+      </div>
+    </section>
+    <section class="work-body">
+      <div class="container">
+        <div class="masonry">
+          <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/01.jpg" alt="Photo design 1" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/01.jpg</span></div></figure>
+          <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/02.jpg" alt="Photo design 2" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/02.jpg</span></div></figure>
+          <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/03.jpg" alt="Photo design 3" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/03.jpg</span></div></figure>
+          <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/04.jpg" alt="Photo design 4" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/04.jpg</span></div></figure>
+          <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/05.jpg" alt="Photo design 5" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/05.jpg</span></div></figure>
+          <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/06.jpg" alt="Photo design 6" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/06.jpg</span></div></figure>
+          <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/07.jpg" alt="Photo design 7" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/07.jpg</span></div></figure>
+          <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/08.jpg" alt="Photo design 8" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/08.jpg</span></div></figure>
+        </div>
+        <a class="next reveal" href="logos-flyers.html">
+          <div class="next__text">
+            <span class="eyebrow">Next project</span>
+            <span class="next__title">Logos &amp; Flyers →</span>
+          </div>
+          <div class="next__img"><img src="assets/img/logos/flyer-3.jpg" alt="" loading="lazy" /></div>
+        </a>
+      </div>
+    </section>
+    <section class="contact contact--band">
+      <div class="container">
+        <p class="eyebrow reveal">Got a project in mind?</p>
+        <h2 class="contact__title contact__title--sm reveal">Let's build <span>something bold.</span></h2>
+        <div class="contact__links">
+          <a class="contact__card reveal" href="mailto:info.samsonalex@gmail.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">info.samsonalex@gmail.com</span>
+          </a>
+          <a class="contact__card reveal" href="https://instagram.com/exxploitt" target="_blank" rel="noopener">
+            <span class="contact__label">Instagram</span>
+            <span class="contact__value">@exxploitt</span>
+          </a>
+          <a class="contact__card reveal" href="https://wa.me/2349083537877" target="_blank" rel="noopener">
+            <span class="contact__label">Phone / WhatsApp</span>
+            <span class="contact__value">+234 908 353 7877</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Akinyemi Samson</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

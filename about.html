@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Akinyemi Samson</title>
+  <meta name="description" content="About Akinyemi Samson, Strategic Digital Designer and Automation Specialist." />
+  <meta property="og:title" content="About — Akinyemi Samson" />
+  <meta property="og:description" content="About Akinyemi Samson, Strategic Digital Designer and Automation Specialist." />
+  <meta property="og:image" content="assets/img/portrait.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <span id="top"></span>
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">AS<span>.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About</a>
+      <div class="nav__group">
+        <button class="nav__works" aria-expanded="false" aria-haspopup="true">Works <span aria-hidden="true">▾</span></button>
+        <ul class="nav__sub">
+          <li><a href="photo-designing.html">Photo Designing</a></li>
+          <li><a href="logos-flyers.html">Logos &amp; Flyers</a></li>
+          <li><a href="portfolio-designing.html">Portfolio Designing</a></li>
+          <li><a href="instagram-format.html">Instagram Format</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="about about--page">
+      <div class="container about__grid">
+        <figure class="about__photo reveal">
+          <div class="frame">
+            <img src="assets/img/about.jpg" alt="Akinyemi Samson" onerror="this.parentElement.classList.add('is-empty')" />
+            <span class="frame__label">about.jpg</span>
+          </div>
+        </figure>
+        <div class="about__text">
+          <h1 class="section-title reveal">About Me</h1>
+          <p class="lead reveal">I am a Strategic Digital Designer and Automation Specialist with years of experience helping brands, founders, and organizations build strong, scalable online identities.</p>
+          <p class="reveal">I design clear, visually engaging portfolios, manage data-driven social media strategies, and develop AI automation solutions that improve workflow and support growth. My work covers brand reengineering and rebranding, custom website development, and high-quality photo and visual design.</p>
+          <p class="reveal">Every project is built to be consistent, modern, and focused on real results, not just appearance. By combining creative design, technical skill, and automation, I help businesses and creatives strengthen their digital presence, improve efficiency, and operate more effectively.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="group-title reveal">What I do</h2>
+        <div class="services">
+          <article class="service reveal"><h3>Brand Rebranding</h3><p>Reengineering identities so brands look and feel consistent everywhere.</p></article>
+          <article class="service reveal"><h3>Photo &amp; Visual Design</h3><p>High-impact edits, composites, logos and flyers that stop the scroll.</p></article>
+          <article class="service reveal"><h3>Portfolios &amp; Websites</h3><p>Custom portfolio decks and websites for models, artists and founders.</p></article>
+          <article class="service reveal"><h3>Social &amp; AI Automation</h3><p>Data-driven social strategy and automation that saves hours every week.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="contact contact--band">
+      <div class="container">
+        <p class="eyebrow reveal">Got a project in mind?</p>
+        <h2 class="contact__title contact__title--sm reveal">Let's build <span>something bold.</span></h2>
+        <div class="contact__links">
+          <a class="contact__card reveal" href="mailto:info.samsonalex@gmail.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">info.samsonalex@gmail.com</span>
+          </a>
+          <a class="contact__card reveal" href="https://instagram.com/exxploitt" target="_blank" rel="noopener">
+            <span class="contact__label">Instagram</span>
+            <span class="contact__value">@exxploitt</span>
+          </a>
+          <a class="contact__card reveal" href="https://wa.me/2349083537877" target="_blank" rel="noopener">
+            <span class="contact__label">Phone / WhatsApp</span>
+            <span class="contact__value">+234 908 353 7877</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Akinyemi Samson</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

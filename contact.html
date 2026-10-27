@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Akinyemi Samson</title>
+  <meta name="description" content="Get in touch with Akinyemi Samson." />
+  <meta property="og:title" content="Contact — Akinyemi Samson" />
+  <meta property="og:description" content="Get in touch with Akinyemi Samson." />
+  <meta property="og:image" content="assets/img/portrait.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <span id="top"></span>
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">AS<span>.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="nav__group">
+        <button class="nav__works" aria-expanded="false" aria-haspopup="true">Works <span aria-hidden="true">▾</span></button>
+        <ul class="nav__sub">
+          <li><a href="photo-designing.html">Photo Designing</a></li>
+          <li><a href="logos-flyers.html">Logos &amp; Flyers</a></li>
+          <li><a href="portfolio-designing.html">Portfolio Designing</a></li>
+          <li><a href="instagram-format.html">Instagram Format</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="nav__cta" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="contact contact--page">
+      <div class="container">
+        <p class="eyebrow reveal">Got a project in mind?</p>
+        <h1 class="contact__title reveal">Let's build<br /><span>something bold.</span></h1>
+        <p class="contact__intro reveal">Branding, photo design, portfolios, websites or automation. Send a message with what you need and I'll get back to you.</p>
+        <div class="contact__links">
+          <a class="contact__card reveal" href="mailto:info.samsonalex@gmail.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">info.samsonalex@gmail.com</span>
+          </a>
+          <a class="contact__card reveal" href="https://instagram.com/exxploitt" target="_blank" rel="noopener">
+            <span class="contact__label">Instagram</span>
+            <span class="contact__value">@exxploitt</span>
+          </a>
+          <a class="contact__card reveal" href="https://wa.me/2349083537877" target="_blank" rel="noopener">
+            <span class="contact__label">Phone / WhatsApp</span>
+            <span class="contact__value">+234 908 353 7877</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Akinyemi Samson</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

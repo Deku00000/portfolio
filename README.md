@@ -16,7 +16,7 @@ The images were cut from the Canva design and live in `assets/img/`. To swap one
 | `portfolio/josephine-1.jpg` … `-4.jpg` | Josephine Abraham case |
 | `portfolio/nasir-1.jpg` … `-6.jpg` | Nasir Mohammed case |
 | `instagram/mockup.jpg` | Instagram phone mockup |
-| `instagram/01.jpg` … `07.jpg` | Instagram post designs |
+| `instagram/01.jpg` … `08.jpg` | Instagram post designs |
 
 ## Preview locally
 

@@ -4,19 +4,36 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // Nav: shrink on scroll + mobile menu
 const nav = document.getElementById("nav");
 const toggle = nav.querySelector(".nav__toggle");
-addEventListener("scroll", () => nav.classList.toggle("is-scrolled", scrollY > 40), { passive: true });
+const onScroll = () => nav.classList.toggle("is-scrolled", scrollY > 40);
+addEventListener("scroll", onScroll, { passive: true });
+onScroll();
+
+const closeMenu = () => {
+  nav.classList.remove("is-open");
+  toggle.setAttribute("aria-expanded", false);
+  document.body.style.overflow = "";
+};
 toggle.addEventListener("click", () => {
   const open = nav.classList.toggle("is-open");
   toggle.setAttribute("aria-expanded", open);
   document.body.style.overflow = open ? "hidden" : "";
 });
-nav.querySelectorAll(".nav__links a").forEach((a) =>
-  a.addEventListener("click", () => {
-    nav.classList.remove("is-open");
-    toggle.setAttribute("aria-expanded", false);
-    document.body.style.overflow = "";
-  })
-);
+nav.querySelectorAll(".nav__links a").forEach((a) => a.addEventListener("click", closeMenu));
+
+// Works dropdown: opens on hover (CSS), and on click/tap or keyboard
+const group = nav.querySelector(".nav__group");
+const worksBtn = nav.querySelector(".nav__works");
+worksBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const open = group.classList.toggle("is-open");
+  worksBtn.setAttribute("aria-expanded", open);
+});
+document.addEventListener("click", (e) => {
+  if (!group.contains(e.target)) {
+    group.classList.remove("is-open");
+    worksBtn.setAttribute("aria-expanded", false);
+  }
+});
 
 // Fade elements in as they scroll into view
 const io = new IntersectionObserver(
@@ -30,20 +47,6 @@ const io = new IntersectionObserver(
   { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
 );
 document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
-
-// Work category filters
-const filters = document.querySelectorAll(".filter");
-const groups = document.querySelectorAll(".work-group");
-filters.forEach((btn) =>
-  btn.addEventListener("click", () => {
-    filters.forEach((b) => b.classList.toggle("is-active", b === btn));
-    const f = btn.dataset.filter;
-    groups.forEach((g) => {
-      g.classList.toggle("is-hidden", f !== "all" && g.dataset.group !== f);
-      g.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
-    });
-  })
-);
 
 // Lightbox for work images
 const lightbox = document.getElementById("lightbox");
@@ -63,4 +66,10 @@ document.querySelectorAll(".tile, .logo-tile").forEach((fig) =>
   })
 );
 lightbox.addEventListener("click", (e) => { if (e.target !== lbImg) closeLb(); });
-addEventListener("keydown", (e) => { if (e.key === "Escape") closeLb(); });
+addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeLb();
+    group.classList.remove("is-open");
+    closeMenu();
+  }
+});
