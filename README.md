@@ -12,7 +12,7 @@ The images were cut from the Canva design and live in `assets/img/`. To swap one
 | `about.jpg` | About Me |
 | `photo/01.jpg` … `photo/08.jpg` | Photo Designing gallery |
 | `logos/logo-1.png` … `logo-4.png` | Logos (transparent PNGs look best) |
-| `logos/flyer-1.jpg`, `flyer-2.jpg` | Flyers |
+| `logos/flyer-1.jpg` … `flyer-3.jpg` | Flyers |
 | `portfolio/josephine-1.jpg` … `-4.jpg` | Josephine Abraham case |
 | `portfolio/nasir-1.jpg` … `-6.jpg` | Nasir Mohammed case |
 | `instagram/mockup.jpg` | Instagram phone mockup |

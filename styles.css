@@ -174,7 +174,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .logo-tile .frame { aspect-ratio: 372/538; box-shadow: 0 20px 40px -20px rgba(0,0,0,.6); }
 .logo-tile:hover .frame img { transform: scale(1.05); }
 .logo-tile .frame.is-empty { background: rgba(0,0,0,.25); }
-.flyers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.flyers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
 .flyers .frame { aspect-ratio: 4/5; }
 .flyers figcaption { color: var(--cream); opacity: .8; }
 
