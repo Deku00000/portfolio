@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akinyemi Samson — Digital Designer & Automation Specialist</title>
+  <meta name="description" content="Strategic Digital Designer and Automation Specialist. Brand rebranding, photo design, portfolios, websites and AI automation." />
+  <meta property="og:title" content="Akinyemi Samson — Portfolio" />
+  <meta property="og:description" content="Strategic Digital Designer and Automation Specialist." />
+  <meta property="og:image" content="assets/img/portrait.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">AS<span>.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links">
+      <a href="#home">Home</a>
+      <a href="#about">About me</a>
+      <a href="#works">Works</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>PORTFOLIO</span><span class="outline">PORTFOLIO</span><span>PORTFOLIO</span><span class="outline">PORTFOLIO</span>
+          <span>PORTFOLIO</span><span class="outline">PORTFOLIO</span><span>PORTFOLIO</span><span class="outline">PORTFOLIO</span>
+        </div>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Akinyemi Samson</p>
+          <h1 class="hero__title reveal">My<br /><span>Portfolio</span></h1>
+          <p class="hero__sub reveal">Strategic Digital Designer &amp; Automation Specialist — building bold, scalable online identities for brands, founders and creatives.</p>
+          <div class="hero__actions reveal">
+            <a href="#works" class="btn btn--solid">See my work</a>
+            <a href="#contact" class="btn btn--ghost">Let's talk</a>
+          </div>
+        </div>
+        <figure class="hero__photo reveal">
+          <div class="frame">
+            <img src="assets/img/portrait.jpg" alt="Portrait of Akinyemi Samson" onerror="this.parentElement.classList.add('is-empty')" />
+            <span class="frame__label">portrait.jpg</span>
+          </div>
+          <figcaption>@exxploitt</figcaption>
+        </figure>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">Scroll ↓</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <figure class="about__photo reveal">
+          <div class="frame">
+            <img src="assets/img/about.jpg" alt="Akinyemi Samson" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" />
+            <span class="frame__label">about.jpg</span>
+          </div>
+        </figure>
+        <div class="about__text">
+          <h2 class="section-title reveal">About Me</h2>
+          <p class="lead reveal">I am a Strategic Digital Designer and Automation Specialist with years of experience helping brands, founders, and organizations build strong, scalable online identities.</p>
+          <p class="reveal">I design clear, visually engaging portfolios, manage data-driven social media strategies, and develop AI automation solutions that improve workflow and support growth. My work covers brand reengineering and rebranding, custom website development, and high-quality photo and visual design.</p>
+          <p class="reveal">Every project is built to be consistent, modern, and focused on real results — not just appearance. By combining creative design, technical skill, and automation, I help businesses and creatives strengthen their digital presence, improve efficiency, and operate more effectively.</p>
+        </div>
+      </div>
+
+      <div class="container services">
+        <article class="service reveal"><span class="service__num">01</span><h3>Brand Rebranding</h3><p>Reengineering identities so brands look and feel consistent everywhere.</p></article>
+        <article class="service reveal"><span class="service__num">02</span><h3>Photo &amp; Visual Design</h3><p>High-impact edits, composites, logos and flyers that stop the scroll.</p></article>
+        <article class="service reveal"><span class="service__num">03</span><h3>Portfolios &amp; Websites</h3><p>Custom portfolio decks and websites for models, artists and founders.</p></article>
+        <article class="service reveal"><span class="service__num">04</span><h3>Social &amp; AI Automation</h3><p>Data-driven social strategy and automation that saves hours every week.</p></article>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="works" id="works">
+      <div class="container">
+        <div class="works__head">
+          <h2 class="section-title reveal">Selected Works</h2>
+          <div class="filters reveal" role="tablist">
+            <button class="filter is-active" data-filter="all">All</button>
+            <button class="filter" data-filter="photo">Photo Designing</button>
+            <button class="filter" data-filter="logos">Logos &amp; Flyers</button>
+            <button class="filter" data-filter="portfolio">Portfolio Designing</button>
+            <button class="filter" data-filter="instagram">Instagram Format</button>
+          </div>
+        </div>
+
+        <!-- PHOTO DESIGNING -->
+        <div class="work-group" data-group="photo">
+          <h3 class="group-title reveal"><span>01</span> Photo Designing</h3>
+          <div class="masonry">
+            <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/01.jpg" alt="Photo design 1" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/01.jpg</span></div></figure>
+            <figure class="tile tile--tall reveal"><div class="frame"><img src="assets/img/photo/02.jpg" alt="Photo design 2" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/02.jpg</span></div></figure>
+            <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/03.jpg" alt="Photo design 3" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/03.jpg</span></div></figure>
+            <figure class="tile tile--tall reveal"><div class="frame"><img src="assets/img/photo/04.jpg" alt="Photo design 4" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/04.jpg</span></div></figure>
+            <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/05.jpg" alt="Photo design 5" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/05.jpg</span></div></figure>
+            <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/06.jpg" alt="Photo design 6" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/06.jpg</span></div></figure>
+            <figure class="tile tile--tall reveal"><div class="frame"><img src="assets/img/photo/07.jpg" alt="Photo design 7" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/07.jpg</span></div></figure>
+            <figure class="tile reveal"><div class="frame"><img src="assets/img/photo/08.jpg" alt="Photo design 8" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">photo/08.jpg</span></div></figure>
+          </div>
+        </div>
+
+        <!-- LOGOS & FLYERS -->
+        <div class="work-group work-group--rust" data-group="logos">
+          <h3 class="group-title reveal"><span>02</span> Logos &amp; Flyers</h3>
+          <div class="logos">
+            <figure class="logo-tile reveal"><div class="frame"><img src="assets/img/logos/logo-1.png" alt="Logo 1" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">logos/logo-1.png</span></div></figure>
+            <figure class="logo-tile reveal"><div class="frame"><img src="assets/img/logos/logo-2.png" alt="Logo 2" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">logos/logo-2.png</span></div></figure>
+            <figure class="logo-tile reveal"><div class="frame"><img src="assets/img/logos/logo-3.png" alt="Logo 3" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">logos/logo-3.png</span></div></figure>
+            <figure class="logo-tile reveal"><div class="frame"><img src="assets/img/logos/logo-4.png" alt="Logo 4" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">logos/logo-4.png</span></div></figure>
+          </div>
+          <div class="flyers">
+            <figure class="tile reveal"><div class="frame"><img src="assets/img/logos/flyer-1.jpg" alt="Naija Street Style flyer" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">logos/flyer-1.jpg</span></div><figcaption>Naija Street Style</figcaption></figure>
+            <figure class="tile reveal"><div class="frame"><img src="assets/img/logos/flyer-2.jpg" alt="No Style Is Safe flyer" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">logos/flyer-2.jpg</span></div><figcaption>No Style Is Safe</figcaption></figure>
+          </div>
+        </div>
+
+        <!-- PORTFOLIO DESIGNING -->
+        <div class="work-group" data-group="portfolio">
+          <h3 class="group-title reveal"><span>03</span> Portfolio Designing</h3>
+
+          <article class="case reveal">
+            <header class="case__head">
+              <h4>Josephine Abraham</h4>
+              <p>Model</p>
+            </header>
+            <div class="case__grid">
+              <figure class="tile"><div class="frame"><img src="assets/img/portfolio/josephine-1.jpg" alt="Josephine Abraham portfolio page 1" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">portfolio/josephine-1.jpg</span></div></figure>
+              <figure class="tile"><div class="frame"><img src="assets/img/portfolio/josephine-2.jpg" alt="Josephine Abraham portfolio page 2" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">portfolio/josephine-2.jpg</span></div></figure>
+              <figure class="tile"><div class="frame"><img src="assets/img/portfolio/josephine-3.jpg" alt="Josephine Abraham portfolio page 3" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">portfolio/josephine-3.jpg</span></div></figure>
+              <figure class="tile"><div class="frame"><img src="assets/img/portfolio/josephine-4.jpg" alt="Josephine Abraham portfolio page 4" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">portfolio/josephine-4.jpg</span></div></figure>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <header class="case__head">
+              <h4>Nasir Mohammed</h4>
+              <p>Dance Entrepreneur</p>
+            </header>
+            <div class="case__grid">
+              <figure class="tile"><div class="frame"><img src="assets/img/portfolio/nasir-1.jpg" alt="Nasir Mohammed portfolio page 1" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">portfolio/nasir-1.jpg</span></div></figure>
+              <figure class="tile"><div class="frame"><img src="assets/img/portfolio/nasir-2.jpg" alt="Nasir Mohammed portfolio page 2" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">portfolio/nasir-2.jpg</span></div></figure>
+              <figure class="tile"><div class="frame"><img src="assets/img/portfolio/nasir-3.jpg" alt="Nasir Mohammed portfolio page 3" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">portfolio/nasir-3.jpg</span></div></figure>
+              <figure class="tile"><div class="frame"><img src="assets/img/portfolio/nasir-4.jpg" alt="Nasir Mohammed portfolio page 4" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">portfolio/nasir-4.jpg</span></div></figure>
+            </div>
+          </article>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="work-group" data-group="instagram">
+          <h3 class="group-title reveal"><span>04</span> Instagram Format Portfolio</h3>
+          <div class="insta">
+            <figure class="phone reveal"><div class="frame"><img src="assets/img/instagram/01.jpg" alt="Instagram format portfolio 1" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">instagram/01.jpg</span></div></figure>
+            <figure class="phone reveal"><div class="frame"><img src="assets/img/instagram/02.jpg" alt="Instagram format portfolio 2" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">instagram/02.jpg</span></div></figure>
+            <figure class="phone reveal"><div class="frame"><img src="assets/img/instagram/03.jpg" alt="Instagram format portfolio 3" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">instagram/03.jpg</span></div></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <p class="eyebrow reveal">Got a project in mind?</p>
+        <h2 class="contact__title reveal">Let's build<br /><span>something bold.</span></h2>
+        <div class="contact__links">
+          <a class="contact__card reveal" href="mailto:info.samsonalex@gmail.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">info.samsonalex@gmail.com</span>
+          </a>
+          <a class="contact__card reveal" href="https://instagram.com/exxploitt" target="_blank" rel="noopener">
+            <span class="contact__label">Instagram</span>
+            <span class="contact__value">@exxploitt</span>
+          </a>
+          <a class="contact__card reveal" href="https://wa.me/2349083537877" target="_blank" rel="noopener">
+            <span class="contact__label">Phone / WhatsApp</span>
+            <span class="contact__value">+234 908 353 7877</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Akinyemi Samson</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
