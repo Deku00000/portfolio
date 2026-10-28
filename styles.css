@@ -370,3 +370,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 @media (max-width: 760px) {
   .work-card--wide .work-card__img { aspect-ratio: 4/3; }
 }
+
+/* Website card in a light, brand-colored style (set per site) */
+.site { --site-accent: var(--coral); }
+.site .eyebrow { color: var(--site-accent); }
+.site__points li { border-left-color: var(--site-accent); }
+.site--light { background: #f4f1ec; border-color: #f4f1ec; color: #141110; box-shadow: 0 40px 80px -40px rgba(0,0,0,.8); }
+.site--light .site__summary, .site--light .site__points li { color: #5a524c; }
+.site--light .site__points strong { color: #141110; }
+.site--light .btn--solid { background: var(--site-accent); color: #fff; }
+.site--light .btn--solid:hover { background: #141110; color: #fff; }
+.site--light .browser { border-color: #0a0a0a; box-shadow: 0 30px 60px -30px rgba(0,0,0,.55); }
+.site--light .browser__bar { background: #0a0a0a; border-bottom-color: #222; }
+.site--light .browser__bar em { color: #b9b2ab; background: rgba(255,255,255,.08); }
+.site--light .handset { border-color: #0a0a0a; box-shadow: 0 24px 40px -18px rgba(0,0,0,.55); }
+.site--light .btn:focus-visible { outline-color: var(--site-accent); }
