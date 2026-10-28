@@ -1,6 +1,6 @@
 # Akinyemi Samson — Portfolio
 
-A one-page portfolio site. It's plain HTML, CSS and JavaScript, so there's no build step.
+A multi-page portfolio site. It's plain HTML, CSS and JavaScript, so there's no build step.
 
 ## Images
 
@@ -17,6 +17,8 @@ The images were cut from the Canva design and live in `assets/img/`. To swap one
 | `portfolio/nasir-1.jpg` … `-6.jpg` | Nasir Mohammed case |
 | `instagram/mockup.jpg` | Instagram phone mockup |
 | `instagram/01.jpg` … `08.jpg` | Instagram post designs |
+| `instagram/links/01.jpg`, `02.jpg` | Instagram link card covers |
+| `web/dancersasylum-desktop.jpg`, `-mobile.jpg` | Web Designing screenshots |
 
 ## Preview locally
 
