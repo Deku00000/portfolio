@@ -40,22 +40,35 @@
     </nav>
   </header>
   <main>
-    <section class="about about--page">
-      <div class="container about__grid">
-        <figure class="about__photo reveal">
+    <section class="hero about-hero">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>PORTFOLIO</span><span class="outline">PORTFOLIO</span><span>PORTFOLIO</span><span class="outline">PORTFOLIO</span>
+          <span>PORTFOLIO</span><span class="outline">PORTFOLIO</span><span>PORTFOLIO</span><span class="outline">PORTFOLIO</span>
+        </div>
+      </div>
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Akinyemi Samson</p>
+          <h1 class="hero__title about-hero__title reveal">About<br /><span>Me</span></h1>
+          <p class="about-hero__lead reveal">I am a Strategic Digital Designer and Automation Specialist with years of experience helping brands, founders, and organizations build strong, scalable online identities.</p>
+          <div class="about-more" id="about-more">
+            <p>I design clear, visually engaging portfolios, manage data-driven social media strategies, and develop AI automation solutions that improve workflow and support growth. My work covers brand reengineering and rebranding, custom website development, and high-quality photo and visual design.</p>
+            <p>Every project is built to be consistent, modern, and focused on real results, not just appearance. By combining creative design, technical skill, and automation, I help businesses and creatives strengthen their digital presence, improve efficiency, and operate more effectively.</p>
+          </div>
+          <button class="btn btn--ghost about-toggle reveal" aria-expanded="false" aria-controls="about-more" hidden>See more <span aria-hidden="true">↓</span></button>
+        </div>
+        <figure class="hero__photo about-hero__photo reveal">
           <div class="frame">
             <img src="assets/img/about.jpg" alt="Akinyemi Samson" onerror="this.parentElement.classList.add('is-empty')" />
             <span class="frame__label">about.jpg</span>
           </div>
+          <figcaption>@exxploitt</figcaption>
         </figure>
-        <div class="about__text">
-          <h1 class="section-title reveal">About Me</h1>
-          <p class="lead reveal">I am a Strategic Digital Designer and Automation Specialist with years of experience helping brands, founders, and organizations build strong, scalable online identities.</p>
-          <p class="reveal">I design clear, visually engaging portfolios, manage data-driven social media strategies, and develop AI automation solutions that improve workflow and support growth. My work covers brand reengineering and rebranding, custom website development, and high-quality photo and visual design.</p>
-          <p class="reveal">Every project is built to be consistent, modern, and focused on real results, not just appearance. By combining creative design, technical skill, and automation, I help businesses and creatives strengthen their digital presence, improve efficiency, and operate more effectively.</p>
-        </div>
       </div>
+    </section>
 
+    <section class="about about--page">
       <div class="container">
         <h2 class="group-title reveal">What I do</h2>
         <div class="services">

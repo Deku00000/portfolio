@@ -416,3 +416,21 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 }
 .nav__logo .nav__logo-a { color: #000; }
 .nav__logo .nav__logo-s { color: #fff; }
+
+/* About page: hero-style opening with "See more" */
+.about-hero .marquee { position: absolute; inset: auto 0 8%; opacity: .07; pointer-events: none; }
+.about-hero__title { font-size: clamp(4rem, 11vw, 9.5rem); }
+.about-hero__lead { font-size: clamp(1.1rem, 1.7vw, 1.4rem); line-height: 1.5; max-width: 36rem; }
+.about-more { max-width: 36rem; color: var(--muted); display: grid; gap: 1rem; margin-top: 1rem; }
+.about-more[hidden] { display: none; }
+.about-more:not([hidden]) { animation: about-open .4s ease; }
+@keyframes about-open { from { opacity: 0; transform: translateY(-6px); } }
+.about-toggle { margin-top: 1.6rem; gap: .5rem; }
+.about-toggle span { display: inline-block; transition: transform .3s; }
+.about-toggle[aria-expanded="true"] span { transform: rotate(180deg); }
+.about-hero__photo { max-width: 340px; justify-self: center; width: 100%; }
+.about--page { padding-top: clamp(1rem, 3vw, 2rem); }
+.about--page .group-title { margin-top: 0; }
+@media (prefers-reduced-motion: reduce) { .about-more:not([hidden]) { animation: none; } }
+.about-toggle[hidden] { display: none; }
+@media (max-width: 760px) { .about-hero__photo { max-width: 260px; width: 70%; margin: 1.5rem auto 0; } }

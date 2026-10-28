@@ -73,3 +73,18 @@ addEventListener("keydown", (e) => {
     closeMenu();
   }
 });
+
+// About page: show only the first statement until "See more" is clicked.
+// Without JavaScript the full text simply stays visible.
+const aboutMore = document.getElementById("about-more");
+const aboutToggle = document.querySelector(".about-toggle");
+if (aboutMore && aboutToggle) {
+  aboutMore.hidden = true;
+  aboutToggle.hidden = false;
+  aboutToggle.addEventListener("click", () => {
+    const open = aboutMore.hidden;
+    aboutMore.hidden = !open;
+    aboutToggle.setAttribute("aria-expanded", open);
+    aboutToggle.firstChild.textContent = open ? "See less " : "See more ";
+  });
+}
