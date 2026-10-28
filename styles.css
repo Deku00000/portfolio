@@ -55,7 +55,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .nav.is-scrolled { background: rgba(13, 11, 10, .78); backdrop-filter: blur(12px); padding-block: .75rem; border-bottom: 1px solid var(--line); }
 .nav__logo { font-family: var(--display); font-size: 1.6rem; letter-spacing: .04em; }
-.nav__logo span { color: var(--coral); }
 .nav__links { display: flex; gap: 2rem; align-items: center; font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; }
 .nav__links a { position: relative; opacity: .8; transition: opacity .2s; }
 .nav__links a:hover { opacity: 1; }
@@ -408,3 +407,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 .contact .marquee { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); opacity: .06; pointer-events: none; }
 .contact .marquee .marquee__track { animation-direction: reverse; }
 @media (prefers-reduced-motion: reduce) { .contact .marquee .marquee__track { animation: none; } }
+
+/* Logo: split circle, white half with black A, black half with white S */
+.nav__logo {
+  width: 46px; height: 46px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+  background: linear-gradient(90deg, #fff 50%, #000 50%); box-shadow: 0 0 0 2px #fff;
+  font-size: 1.3rem; line-height: 1; letter-spacing: .02em; position: relative; z-index: 2;
+}
+.nav__logo .nav__logo-a { color: #000; }
+.nav__logo .nav__logo-s { color: #fff; }
