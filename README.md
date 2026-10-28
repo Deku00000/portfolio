@@ -20,6 +20,10 @@ The images were cut from the Canva design and live in `assets/img/`. To swap one
 | `instagram/links/01.jpg`, `02.jpg` | Instagram link card covers |
 | `web/dancersasylum-desktop.jpg`, `-mobile.jpg` | Web Designing screenshots |
 
+## Logo and tab icon
+
+The tab icons (`favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `icon-512.png`) are the black-and-white split-circle "AS" logo. `icon-512.png` is a large version you can reuse elsewhere, such as a profile picture.
+
 ## Preview locally
 
 Open `index.html` in a browser, or run `python3 -m http.server` and visit http://localhost:8000.
