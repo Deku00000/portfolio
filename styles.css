@@ -385,3 +385,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 .site--light .browser__bar em { color: #b9b2ab; background: rgba(255,255,255,.08); }
 .site--light .handset { border-color: #0a0a0a; box-shadow: 0 24px 40px -18px rgba(0,0,0,.55); }
 .site--light .btn:focus-visible { outline-color: var(--site-accent); }
+
+/* Home: Web Designing card in the light style */
+.work-card--wide { background: #f4f1ec; border-color: #f4f1ec; color: #141110; }
+.work-card--wide .work-card__img { background: #f4f1ec; padding: clamp(10px, 1.8vw, 22px) clamp(10px, 1.8vw, 22px) 0; }
+.work-card--wide .work-card__img img { border-radius: 12px; box-shadow: 0 24px 40px -24px rgba(0,0,0,.6); }
+.work-card--wide .work-card__num { color: #e4002b; }
+.work-card--wide .work-card__count { color: #5a524c; }
+.work-card--wide:hover h3 { color: #e4002b; }
