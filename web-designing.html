@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Designing — Akinyemi Samson</title>
+  <meta name="description" content="Website design and development by Akinyemi Samson." />
+  <meta property="og:title" content="Web Designing — Akinyemi Samson" />
+  <meta property="og:description" content="Website design and development by Akinyemi Samson." />
+  <meta property="og:image" content="assets/img/portrait.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <span id="top"></span>
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo">AS<span>.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="nav__group is-current">
+        <button class="nav__works" aria-expanded="false" aria-haspopup="true">Works <span aria-hidden="true">▾</span></button>
+        <ul class="nav__sub">
+          <li><a href="photo-designing.html">Photo Designing</a></li>
+          <li><a href="logos-flyers.html">Logos &amp; Flyers</a></li>
+          <li><a href="portfolio-designing.html">Portfolio Designing</a></li>
+          <li><a href="instagram-format.html">Instagram Format</a></li>
+          <li><a href="web-designing.html" aria-current="page">Web Designing</a></li>
+        </ul>
+      </div>
+      <a href="contact.html" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow reveal"><a href="index.html#works">Works</a> / 05</p>
+        <h1 class="page-head__title reveal">Web Designing</h1>
+        <p class="page-head__intro reveal">Custom websites for agencies, brands and creatives, designed to explain who they are and turn visitors into clients.</p>
+      </div>
+    </section>
+    <section class="work-body">
+      <div class="container">
+        <article class="site reveal">
+          <div class="site__visual">
+            <div class="browser">
+              <div class="browser__bar"><span></span><span></span><span></span><em>dancersasylum.com</em></div>
+              <div class="frame"><img src="assets/img/web/dancersasylum-desktop.jpg" alt="Dancers Asylum website on desktop" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">web/dancersasylum-desktop.jpg</span></div>
+            </div>
+            <div class="handset"><div class="frame"><img src="assets/img/web/dancersasylum-mobile.jpg" alt="Dancers Asylum website on a phone" loading="lazy" onerror="this.parentElement.classList.add('is-empty')" /><span class="frame__label">mobile.jpg</span></div></div>
+          </div>
+          <div class="site__info">
+            <p class="eyebrow">Talent agency website</p>
+            <h2 class="site__name">Dancers Asylum</h2>
+            <p class="site__summary">The online home of Dancers Asylum, a dance talent agency. The site introduces the agency and its work, and gives its two audiences a clear path in.</p>
+            <ul class="site__points">
+              <li><strong>For talent</strong> How to apply and join the agency.</li>
+              <li><strong>For clients</strong> How to book dancers and work with the agency.</li>
+            </ul>
+            <a class="btn btn--solid" href="https://www.dancersasylum.com" target="_blank" rel="noopener">Visit site ↗</a>
+          </div>
+        </article>
+        <a class="next reveal" href="photo-designing.html">
+          <div class="next__text">
+            <span class="eyebrow">Next project</span>
+            <span class="next__title">Photo Designing →</span>
+          </div>
+          <div class="next__img"><img src="assets/img/photo/07.jpg" alt="" loading="lazy" onerror="this.remove()" /></div>
+        </a>
+      </div>
+    </section>
+    <section class="contact contact--band">
+      <div class="container">
+        <p class="eyebrow reveal">Got a project in mind?</p>
+        <h2 class="contact__title contact__title--sm reveal">Let's build <span>something bold.</span></h2>
+        <div class="contact__links">
+          <a class="contact__card reveal" href="mailto:info.samsonalex@gmail.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">info.samsonalex@gmail.com</span>
+          </a>
+          <a class="contact__card reveal" href="https://instagram.com/exxploitt" target="_blank" rel="noopener">
+            <span class="contact__label">Instagram</span>
+            <span class="contact__value">@exxploitt</span>
+          </a>
+          <a class="contact__card reveal" href="https://wa.me/2349083537877" target="_blank" rel="noopener">
+            <span class="contact__label">Phone / WhatsApp</span>
+            <span class="contact__value">+234 908 353 7877</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Akinyemi Samson</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <img alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
