@@ -393,3 +393,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 .work-card--wide .work-card__num { color: #e4002b; }
 .work-card--wide .work-card__count { color: #5a524c; }
 .work-card--wide:hover h3 { color: #e4002b; }
+
+/* Home: Selected Works on a coral band, matching the "Portfolio" headline */
+.works { background: var(--coral); color: var(--ink); }
+.works .section-title { color: var(--ink); }
+.works .work-card { border-color: rgba(13,11,10,.25); box-shadow: 0 30px 50px -30px rgba(60,20,5,.6); }
+.works .work-card:not(.work-card--wide) { color: var(--cream); }
+.works .work-card:not(.work-card--wide):hover h3 { color: var(--coral); }
+.works a:focus-visible { outline-color: var(--ink); }
