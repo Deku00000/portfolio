@@ -428,9 +428,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 .about-toggle { margin-top: 1.6rem; gap: .5rem; }
 .about-toggle span { display: inline-block; transition: transform .3s; }
 .about-toggle[aria-expanded="true"] span { transform: rotate(180deg); }
-.about-hero__photo { max-width: 340px; justify-self: center; width: 100%; }
+.about-hero__photo { max-width: 260px; justify-self: center; width: 100%; }
 .about--page { padding-top: clamp(1rem, 3vw, 2rem); }
 .about--page .group-title { margin-top: 0; }
 @media (prefers-reduced-motion: reduce) { .about-more:not([hidden]) { animation: none; } }
 .about-toggle[hidden] { display: none; }
-@media (max-width: 760px) { .about-hero__photo { max-width: 260px; width: 70%; margin: 1.5rem auto 0; } }
+@media (max-width: 760px) { .about-hero__photo { max-width: 210px; width: 60%; margin: 1.5rem auto 0; } }
