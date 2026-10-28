@@ -401,3 +401,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 .works .work-card:not(.work-card--wide) { color: var(--cream); }
 .works .work-card:not(.work-card--wide):hover h3 { color: var(--coral); }
 .works a:focus-visible { outline-color: var(--ink); }
+
+/* Scrolling "PORTFOLIO" text behind the contact section */
+.contact { position: relative; overflow: hidden; }
+.contact .container { position: relative; z-index: 1; }
+.contact .marquee { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); opacity: .06; pointer-events: none; }
+.contact .marquee .marquee__track { animation-direction: reverse; }
+@media (prefers-reduced-motion: reduce) { .contact .marquee .marquee__track { animation: none; } }
