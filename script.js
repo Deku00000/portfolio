@@ -88,3 +88,26 @@ if (aboutMore && aboutToggle) {
     aboutToggle.firstChild.textContent = open ? "See less " : "See more ";
   });
 }
+
+// Awards page: Solo / Duo plaque tabs. Without JavaScript both sets stay visible.
+const tabs = document.querySelectorAll(".plaques__tab");
+if (tabs.length) {
+  const show = (tab) => {
+    tabs.forEach((t) => {
+      const on = t === tab;
+      t.setAttribute("aria-selected", on);
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+    });
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener("click", () => show(t));
+    t.addEventListener("keydown", (e) => {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      const next = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+      show(next);
+      next.focus();
+    });
+  });
+  show(tabs[0]);
+}
