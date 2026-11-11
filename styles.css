@@ -530,5 +530,5 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 }
 
 /* Awards page: heading above the Solo / Duo tabs, set apart from the page header */
-.plaques { margin-top: clamp(1.5rem, 4vw, 3rem); }
-.plaques__title { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(2.2rem, 5.5vw, 4rem); line-height: .95; margin-bottom: 1.2rem; }
+.plaques { margin-top: 0; }
+.plaques__intro { font-size: clamp(1.05rem, 1.6vw, 1.3rem); color: var(--cream); max-width: 44rem; margin-bottom: 1.3rem; }
