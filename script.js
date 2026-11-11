@@ -111,3 +111,19 @@ if (tabs.length) {
   });
   show(tabs[0]);
 }
+
+// Why Professional page: highlight the section you're reading in the side list.
+const tocLinks = document.querySelectorAll(".why-toc a");
+if (tocLinks.length) {
+  const byId = new Map([...tocLinks].map((a) => [a.getAttribute("href").slice(1), a]));
+  const spy = new IntersectionObserver(
+    (entries) =>
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        tocLinks.forEach((a) => a.classList.remove("is-active"));
+        byId.get(e.target.id)?.classList.add("is-active");
+      }),
+    { rootMargin: "-30% 0px -60% 0px" }
+  );
+  document.querySelectorAll(".why-item").forEach((s) => spy.observe(s));
+}

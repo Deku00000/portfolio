@@ -532,3 +532,48 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
 /* Awards page: heading above the Solo / Duo tabs, set apart from the page header */
 .plaques { margin-top: 0; }
 .plaques__intro { font-size: clamp(1.05rem, 1.6vw, 1.3rem); color: var(--cream); max-width: 44rem; margin-bottom: 1.3rem; }
+
+/* ---------- Why You Need to Be Professional ---------- */
+.why-title { font-size: clamp(3rem, 9vw, 7.5rem); max-width: 14ch; }
+.why-statement { color: var(--coral); font-size: clamp(1.25rem, 2.4vw, 1.9rem); line-height: 1.35; max-width: 36rem; margin-bottom: 1.2rem; font-weight: 500; }
+.why__layout { display: grid; grid-template-columns: minmax(0, 230px) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.why-toc { position: sticky; top: 6.5rem; }
+.why-toc__label { font-size: .75rem; letter-spacing: .25em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+.why-toc ol { list-style: none; display: grid; gap: .2rem; border-left: 1px solid var(--line); }
+.why-toc a { display: flex; gap: .6rem; padding: .4rem .9rem; margin-left: -1px; border-left: 2px solid transparent; color: var(--muted); font-size: .9rem; transition: color .2s, border-color .2s; }
+.why-toc a span { color: var(--coral); font-variant-numeric: tabular-nums; }
+.why-toc a:hover, .why-toc a.is-active { color: var(--cream); border-left-color: var(--coral); }
+.why__article { max-width: 44rem; min-width: 0; }
+.why-item { padding: clamp(2rem, 4vw, 3rem) 0; border-top: 1px solid var(--line); scroll-margin-top: 6rem; }
+.why-item:first-child { border-top: 0; padding-top: 0; }
+.why-item__num { font-family: var(--display); color: var(--coral); font-size: 1.1rem; }
+.why-item__title { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(2rem, 5vw, 3.4rem); line-height: .95; margin: .3rem 0 .9rem; }
+.why-item__lead { color: var(--coral); font-size: clamp(1.1rem, 1.8vw, 1.35rem); font-weight: 600; line-height: 1.4; margin-bottom: .8rem; }
+.why-item > p:not([class]) { color: #cfc6bb; font-size: 1.05rem; line-height: 1.75; }
+.why-item__points { list-style: none; display: grid; gap: .6rem; margin: 1.4rem 0 1.6rem; }
+.why-item__points li { position: relative; padding-left: 1.8rem; color: var(--cream); }
+.why-item__points li::before { content: ""; position: absolute; left: 0; top: .45em; width: 1rem; height: .55rem; border-left: 2px solid var(--coral); border-bottom: 2px solid var(--coral); transform: rotate(-45deg); }
+.why-link { display: inline-flex; align-items: center; gap: 1rem; padding: .5rem 1.2rem .5rem .5rem; border: 1px solid var(--line); border-radius: 14px; background: var(--ink-2); font-weight: 600; font-size: .92rem; transition: border-color .25s, transform .25s; max-width: 100%; }
+.why-link img { width: 64px; height: 64px; object-fit: cover; object-position: top; border-radius: 9px; flex: none; }
+.why-link:hover { border-color: var(--coral); transform: translateY(-2px); }
+.why-link:hover > span { color: var(--coral); }
+.why-link--talk { padding: .85rem 1.3rem; border-radius: 999px; border-color: var(--coral); color: var(--coral); }
+.why-link--talk:hover { background: var(--coral); color: var(--ink); }
+.why-link--talk:hover > span { color: var(--ink); }
+.why-close { margin-top: clamp(1rem, 3vw, 2rem); padding: clamp(2rem, 5vw, 3.5rem); border-radius: 24px; background: #f4f1ec; color: #141110; }
+.why-close__quote { font-family: var(--display); text-transform: uppercase; font-size: clamp(2rem, 5vw, 3.4rem); line-height: .98; margin-bottom: 1.2rem; text-wrap: balance; }
+.why-close__quote span { color: #c4401c; }
+.why-close p:not([class]) { color: #4a433d; line-height: 1.7; margin-bottom: 1.6rem; max-width: 36rem; }
+.why-close .btn--solid { background: #141110; color: #f4f1ec; }
+.why-close .btn--solid:hover { background: var(--coral); color: var(--ink); }
+
+.read-why { display: grid; gap: .4rem; margin-top: clamp(2.5rem, 5vw, 4rem); padding: clamp(1.5rem, 3vw, 2.2rem); border: 1px solid var(--coral); border-radius: 20px; background: linear-gradient(135deg, rgba(255,106,69,.12), transparent 60%); transition: transform .3s, background .3s; }
+.read-why:hover { transform: translateY(-3px); background: linear-gradient(135deg, rgba(255,106,69,.22), transparent 70%); }
+.read-why strong { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1; }
+.read-why > span:last-child { color: var(--muted); }
+
+@media (max-width: 1100px) { .nav__links { gap: 1.4rem; } }
+@media (max-width: 900px) {
+  .why__layout { grid-template-columns: minmax(0, 1fr); }
+  .why-toc { display: none; }
+}
