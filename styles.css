@@ -528,3 +528,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--coral); outline
   .night__tag { font-size: .75rem; }
   .flyer-link { grid-template-columns: 80px minmax(0, 1fr); }
 }
+
+/* Awards page: heading above the Solo / Duo tabs, set apart from the page header */
+.plaques { margin-top: clamp(1.5rem, 4vw, 3rem); }
+.plaques__title { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(2.2rem, 5.5vw, 4rem); line-height: .95; margin-bottom: 1.2rem; }
